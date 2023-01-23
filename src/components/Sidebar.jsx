@@ -1,4 +1,5 @@
 import Avatar from '/IMG_PORTIFOLIO_.png';
+import Curriculo from '../curriculo/curriculo.pdf'
 import {FaDownload} from 'react-icons/fa'
 import '../styles/components/sidebar.sass';
 import InformationContainer from './InformationContainer';
@@ -11,7 +12,7 @@ const Sidebar = () => {
         <p className="title">Desenvolvedor Front-End</p>
         <SocialNetworks/>
         <InformationContainer/>
-        <a href="#" className="btn"><span>Download currículo <FaDownload/></span><i></i></a>
+        <a href={Curriculo} download className="btn"><span>Download currículo <FaDownload/></span><i></i></a>
     </aside>
   )
 }
