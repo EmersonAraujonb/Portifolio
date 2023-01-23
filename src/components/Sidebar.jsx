@@ -1,4 +1,4 @@
-import Avatar from '/IMG_PORTIFOLIO_.png';
+import Avatar from '/MY_IMG.png';
 import Curriculo from '../curriculo/curriculo.pdf'
 import {FaDownload} from 'react-icons/fa'
 import '../styles/components/sidebar.sass';
