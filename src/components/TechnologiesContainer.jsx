@@ -1,4 +1,4 @@
-import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiSass } from 'react-icons/di';
+import { DiHtml5, DiCss3, DiJsBadge, DiReact, DiSass, DiGit } from 'react-icons/di';
 import { SiVuetify, SiTailwindcss, SiBootstrap, SiStyledcomponents, SiMaterialui, SiTypescript } from 'react-icons/si';
 import {TbBrandNextjs} from 'react-icons/tb'
 import { FaVuejs } from 'react-icons/fa';
@@ -97,6 +97,14 @@ const technologies = [
     description:
       'Sass é a linguagem de extensão CSS de nível profissional mais madura, estável e poderosa do mundo.',
   },
+  {
+    id: 'git',
+    name: 'Git',
+    icon: <DiGit />,
+    description:
+      'É um sistema de controle de versões distribuído, usado principalmente no desenvolvimento de software.',
+  }
+
 ];
 
 const TechnologiesContainer = () => {
