@@ -1,0 +1,83 @@
+@use 'variables'
+
+@mixin center
+    display: flex
+    justify-content: center
+    align-items: center
+
+@mixin btn
+    position: relative
+    background: #444
+    color: #ffffff
+    text-decoration: none
+    text-transform: uppercase
+    font-size: 1em
+    letter-spacing: 0.1em
+    padding: 10px 20px
+    transition: 0.5s
+
+    @media screen and (max-width: 320px)
+        font-size: .6rem
+        width: 140px
+        height: 40px
+        text-align: center
+
+    @media screen and (max-width: 768px)
+        font-size: .9rem
+        width: 190px
+        height: 50px
+
+    &:hover
+        letter-spacing: 0.25em
+        background: variables.$gradient
+        color: variables.$text-color
+
+    &::before
+        content: ''
+        position: absolute
+        inset: 2px
+        background: #27282c
+
+    span
+        position: relative
+        z-index: 1
+
+    i
+        position: absolute
+        inset: 0
+        display: block
+
+        &:hover
+
+            &::before
+                width: 10px
+                left: 20%
+        &:hover
+
+            &::after
+                width: 10px
+                left: 80%
+
+    i::before
+        content: ''
+        position: absolute
+        top: -3.5px
+        left: 80%
+        width: 10px
+        height: 5px
+        border: 2px solid #fff
+        background: #27282c
+        transform: translateX(-50%)
+        transition: 0.5s
+
+    i::after
+        content: ''
+        position: absolute
+        bottom: -3.5px
+        left: 20%
+        width: 10px
+        height: 5px
+        border: 2px solid #fff
+        background: #27282c
+        transform: translateX(-50%)
+        transition: 0.5s

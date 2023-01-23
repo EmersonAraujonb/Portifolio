@@ -1,0 +1,42 @@
+@use '../variables'
+@use '../mixins'
+
+.projects-container
+    margin-bottom: 1rem
+
+    img
+        max-width: 100%
+        border-radius: variables.$container-border-radius
+        position: relative
+
+    .projects-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.5rem
+
+        @media screen and (max-width: 768px)
+            gap: 1rem
+        
+        @media screen and (max-width: 320px)
+            gap: 2rem
+            flex-direction: column
+
+        .projects-card
+            @include mixins.center
+            gap: 1rem
+            padding: 1rem
+            border: 1px solid #333
+            width: 45%
+            border-radius: variables.$card-border-radius
+            box-shadow: rgb(255, 255, 255) 5px 5px, rgba(255, 255, 255, 0.3) 10px 10px, rgba(251, 252, 250, 0.2) 15px 15px, rgba(251, 252, 250, 0.1) 20px 20px, rgba(247, 248, 247, 0.05) 25px 25px
+
+            @media screen and (min-width: 320px)
+                width: 100%
+
+            h3
+                color: variables.$text-color
+                margin-bottom: 1rem
+                text-align: center
+
+            @media screen and (max-width: 320px)
+                    font-size: .5rem

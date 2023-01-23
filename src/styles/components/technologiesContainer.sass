@@ -1,0 +1,106 @@
+@use '../variables'
+@use '../mixins'
+
+.technologies-container
+    margin-bottom: 1rem
+
+    .technologies-grid
+        display: flex
+        flex-wrap: wrap
+        gap: 1.9rem
+
+        @media screen and (max-width: 768px)
+            gap: 1rem
+
+        .technology-card
+            @include mixins.center
+            gap: 1rem
+            padding: 1rem
+            border: 1px solid #333
+            width: 45%
+            flex-direction: column
+            border-radius: variables.$card-border-radius
+            box-shadow: rgba(240, 46, 170, 0.4) 5px 5px, rgba(240, 46, 170, 0.3) 10px 10px, rgba(240, 46, 170, 0.2) 15px 15px, rgba(240, 46, 170, 0.1) 20px 20px, rgba(240, 46, 170, 0.05) 25px 25px
+
+            @media screen and (max-width: 768px)
+                flex-direction: column
+
+            h3
+                color: variables.$text-color
+                margin-bottom: 1rem
+
+                @media screen and (max-width: 768px)
+                    font-size: .8rem
+                    display: inline
+
+            svg
+
+                font-size: 8rem
+
+                @media screen and (max-width: 768px)
+                    font-size: 4rem
+
+            p
+                display: none
+                pointer-events: none
+
+            &:hover
+
+                p
+                    display: inline-block
+                    transition: .5s ease-in-out
+                    padding: 0px 10px
+
+            @media screen and (max-width: 768px)
+                pointer-events: none
+        #html
+            svg
+                color: #E44D26
+
+        #css
+            svg
+                color: #1572B6
+
+        #js
+            svg
+                color: #F0DB4F
+
+        #react
+            svg
+                color: #61DAFB
+
+        #vue
+            svg
+                color: #3ab670
+
+        #vuetify
+            svg
+                color: #1967c0
+
+        #tailwindcss
+            svg
+                color: #62a1e9
+
+        #bootstrap
+            svg
+                color: #8000f8
+
+        #styled-components
+            svg
+                color: #c0b412
+
+        #material-ui
+            svg
+                color: #006dd3
+
+        #typescript
+            svg
+                color: #1c7ad1
+
+        #sass
+            svg
+                color: #ff00ea
+
+        #nextJs
+            svg
+                color: #ffffff
