@@ -1,5 +1,5 @@
 import Avatar from '/MY_IMG.png';
-import Curriculo from '../curriculo/curriculo.pdf'
+import Curriculo from '../curriculo/Emerson_Araujo.pdf'
 import {FaDownload} from 'react-icons/fa'
 import '../styles/components/sidebar.sass';
 import InformationContainer from './InformationContainer';
